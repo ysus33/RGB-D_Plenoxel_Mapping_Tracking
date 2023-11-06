@@ -1,0 +1,11 @@
+base_config: opt/configs/config_for_tracking/replica/replica.yaml
+
+exp_name: replica/office3
+device: cuda:0
+ckpt: /home/Project/PlenoxTracking_depth/archive/builtmap/ckpt_o3.npz
+
+data_specs:
+  data_path: /mnt/data3/plenoxelVO/Replica/office3
+
+center: [-0.8,-1.44,0.08]
+radius: 5

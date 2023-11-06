@@ -1,0 +1,8 @@
+base_config: opt/configs/config_for_tracking/scannet/scannet.yaml
+
+exp_name: scannet/0000
+device: cuda:0
+ckpt: /home/yeonsoo/Downloads/pleMT/ckpt/ckpt.npz
+
+data_specs:
+  data_path: /mnt/data3/ScanNet/scene0000_00

@@ -1,0 +1,8 @@
+base_config: opt/configs/config_for_tracking/replica/replica.yaml
+
+exp_name: replica/office4
+device: cuda:0
+ckpt: /home/Project/PlenoxTracking_depth/builtmap/ckpt_o4.npz
+
+data_specs:
+  data_path: /mnt/data3/plenoxelVO/Replica/office4

@@ -1,0 +1,8 @@
+base_config: opt/configs/config_for_tracking/scannet/scannet.yaml
+
+exp_name: scannet/0207
+device: cuda:0
+ckpt: /home/Project/PlenoxTracking_depth/archive/builtmap/ckpt_0207.npz
+
+data_specs:
+  data_path: /mnt/data3/scannet-after/scene0207_00

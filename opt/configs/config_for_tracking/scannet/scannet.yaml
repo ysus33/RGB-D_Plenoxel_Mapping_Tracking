@@ -1,0 +1,50 @@
+log_dir: './logs'
+dataset: scannet
+
+vis_every: 100
+save_every: 10000
+
+data_specs:
+  max_depth: 10
+  depth_scale: 1000.0
+
+cam:
+  H: 480
+  W: 640
+  fx: 577.590698
+  fy: 578.729797
+  cx: 318.905426
+  cy: 242.683609
+
+rendering:
+  # step_size: 1                              # Step size, in normalized voxels
+  step_size: 0.5                                # Step size, in normalized voxels
+  sigma_thresh: 1e-10                           # Voxels with sigmas < this are ignored
+  stop_thresh: 1e-7                             # Stops rendering if the remaining light intensity/termination, in [0, 1]
+  near_clip: 0.0
+  N_samples: 32
+  N_surface: 0
+  N_importance: 12
+  lindisp: False
+  perturb: 0.0
+  empty_space_brightness: 1.0
+  last_sample_opaque: False
+  use_spheric_clip: False
+
+criteria:
+  # rgb_weight: 1
+  rgb_weight: 0.5
+  depth_weight: 1
+
+tracking:
+  # cam_lr: 0.0005
+  cam_lr: 0.001
+  seperate_LR: False
+  lr_scale_rot: 10
+  const_speed_assumption: True
+
+  iter_num: 1
+  epoch_num: 90
+  # batch_size: 7000
+  batch_size: 4096
+  # batch_size: 1024
